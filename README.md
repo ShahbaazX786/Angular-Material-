@@ -26,9 +26,12 @@
 #### Adding Material to our project:
 - To install Angular material in our project we need to use the command <code>npm add @angular/material</code>.
 - This command will add schematics to our project and will make some changes to our project.
+  ![image info](./Day-1/assets/Screenshot_20230129_121148.png)
+  - App.module.ts - This file will be injected with browseranimations module to support material animations.
+  - Angular.json - This file will be updated with the angular material css links.
   - Package.json - This file is updated with the current available angular material version and cdk.
   - Package.lock.json - This file is updated with some configuration. (we can prolly ignore this).
-  - Index.html - In this file links(of angular material cdn) are added in head section of the file.
+  - Index.html - In this file links(of google fonts cdn) are added in head section of the file. and body style is set to mat-typography.
   - Styles.css - In this file some css reset(margin and padding to 0) takes place and roboto font is imported and used as default font.
 > Now to ensure that material is working fine just run the app using <code>ng serve</code> and see if you notice any change in font and if so then material UI is working fine and we are good to go further.
 
